@@ -4,7 +4,9 @@ import { Link } from "react-router-dom"
 import NavBar from "./Menus";
 
 
-
+function resetScreen(){
+  location.reload()
+}
 
 
 
@@ -41,9 +43,9 @@ function App() {
       </div>
       
       <button onClick={() => setCount(count + 1)} style={{backgroundColor: count > 9 ? "red" : "white"}}>Counter</button>
-      
       <div className="p-2">{count}</div>
      
+      <button onClick={resetScreen} style={{backgroundColor: "white"}}>Reset Game</button>
       
     </div> 
     </div>
